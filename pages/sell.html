@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marketplace - Sell & Browse Products</title>
+        <!-- <style>
+        
+        </style> -->
+</head>
+<body>
+    <div class="container">
+        <h2>Marketplace</h2>
+        <div class="flex">
+            <div class="form-section">
+                <form id="sellForm">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="PC">PC</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Accessories">Accessories</option>
+                    </select>
+
+                    <label for="title">Product Title</label>
+                    <input type="text" id="title" name="title" placeholder="e.g. Dell Inspiron 15" required>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Describe your product" required></textarea>
+
+                    <label for="price">Set Your Price</label>
+                    <div style="display: flex; gap: 8px;">
+                        <select id="currency" name="currency" required style="width: 90px;">
+                            <option value="USD">$ (USD)</option>
+                            <option value="INR">₹ (INR)</option>
+                            <option value="EUR">€ (EUR)</option>
+                            <option value="GBP">£ (GBP)</option>
+                        </select>
+                        <input type="number" id="price" name="price" min="1" step="any" required style="flex:1;">
+                    </div>
+
+                    <label for="frontPhoto">Front Photo</label>
+                    <input type="file" id="frontPhoto" name="frontPhoto" accept="image/*" required>
+                    
+                    <label for="backPhoto">Back Photo</label>
+                    <input type="file" id="backPhoto" name="backPhoto" accept="image/*" required>
+
+                    <label for="video">Product Video (optional)</label>
+                    <input type="file" id="video" name="video" accept="video/*">
+
+                    <div class="preview" id="preview"></div>
+
+                    <button type="submit">Sell Now</button>
+                </form>
+            </div>
+            <div class="products-section">
+                <h3>Products for Sale</h3>
+                <div class="products-list" id="productsList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cartModal">
+        <div id="cartModalContent">
+            <button id="cartModalClose">&times;</button>
+            <h3 style="margin-top:0; margin-bottom:16px;">🛒 Your Cart</h3>
+            <div id="cartItemsList"></div>
+            <div id="cartModalEmpty" style="display:none;">Cart is empty!</div>
+            <button id="cartModalBuy" style="display:none;">Buy All</button>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

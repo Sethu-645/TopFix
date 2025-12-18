@@ -1,0 +1,143 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-image: url('contact b3.jpg');
+      background-size: 126%;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #fff;
+      color: #000;
+      padding: 8px 20px;
+      font-size: 12px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .header-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    .main-nav {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo label {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-links ul li {
+      margin: 0 15px;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .nav-links ul li a:hover {
+      color: #f0c14b;
+    }
+
+    .login-button {
+      padding: 6px 20px;
+      border-radius: 20px;
+      background: #f0c14b;
+      border: 1px solid #a88734;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Updated and compact form box */
+    .form-container {
+      max-width: 350px;
+      margin: 40px 0 40px 100px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px burlywood;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .form-container form label {
+      display: block;
+      margin-top: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-container form input,
+    .form-container form select,
+    .form-container form textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-container form input[type="submit"] {
+      margin-top: 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .form-container form input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Device Service Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <style>
+        
+    </style> -->
+</head>
+<body>
+    <nav style="width:100%;background:#0078d7;padding:14px 0 12px 0;box-shadow:0 2px 8px rgba(0,120,215,0.08);position:relative;z-index:2;">
+        <div style="max-width:650px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 24px;">
+            <a href="index.html" style="color:#fff;text-decoration:none;font-weight:600;font-size:1.13em;letter-spacing:0.5px;">Home</a>
+            <a href="contact.html" style="color:#fff;text-decoration:none;font-weight:600;font-size:1.13em;letter-spacing:0.5px;">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Choose Your Device Service</h2>
+        <div class="service-boxes" id="serviceBoxes">
+            <div class="service-box" data-device="PC">
+                <img src="https://img.icons8.com/color/96/000000/monitor.png" alt="PC">
+                <div>PC Service</div>
+            </div>
+            <div class="service-box" data-device="Laptop">
+                <img src="https://img.icons8.com/color/96/000000/laptop.png" alt="Laptop">
+                <div>Laptop Service</div>
+            </div>
+            <div class="service-box" data-device="Mobile">
+                <img src="https://img.icons8.com/color/96/000000/smartphone.png" alt="Mobile">
+                <div>Mobile Service</div>
+            </div>
+        </div>
+        <button id="backBtn" type="button" style="display:none;margin-bottom:18px;background:#e6f7ff;color:#0078d7;border:1.5px solid #b3d8ff;font-size:1em;width:auto;padding:8px 22px;box-shadow:none;transition:background 0.2s;" onclick="goBackToDeviceSelect()">
+            &larr; Back
+        </button>
+        <form id="issueForm" class="hidden" enctype="multipart/form-data">
+            <h2 id="formTitle"></h2>
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Screen">Screen Issue</option>
+                <option value="Battery">Battery Issue</option>
+                <option value="Software">Software Issue</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="problem">Describe the Problem</label>
+            <textarea id="problem" rows="3" required placeholder="E.g., Screen not working, battery issue..."></textarea>
+            <label for="picture">Upload Picture (optional)</label>
+            <input type="file" id="picture" accept="image/*">
+            <label for="video">Upload Video (optional)</label>
+            <input type="file" id="video" accept="video/*">
+            <label for="address">Your Location / Address</label>
+            <input type="text" id="address" required placeholder="Enter your address or location">
+            <button type="submit">Find Service</button>
+        </form>
+        <div id="result" class="result" style="display:none;"></div>
+        <div id="map" style="display:none;"></div>
+    </div>
+    <div style="flex:1"></div>
+    <script>
+    
+    </script>
+</body>
+</html>
